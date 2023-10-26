@@ -1,1 +1,11 @@
+@use './partials/variables' as *;
+@use './partials/jumbotron' as *;
+
+
 @import '~bootstrap/scss/bootstrap';
+
+header {
+    .top {
+        background-color: $dc_primary;
+    }
+}
