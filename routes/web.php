@@ -19,6 +19,11 @@ Route::get('/', function () {
     //dd($comics);
     $merchandises = config('merch.images');
     //dd($merch);
+    $listComics = config('footer-nav.listComics');
+    $listShop = config('footer-nav.listShop');
+    $listDc = config('footer-nav.listDc');
+    $listSites = config('footer-nav.listSites');
+    //dd($listComics, $listShop, $listDc, $listSites);
 
-    return view('home', compact('comics', 'merchandises'));
-})->name('comics', 'merchandises');
+    return view('home', compact('comics', 'merchandises', 'listComics', 'listShop', 'listDc', 'listSites'));
+})->name('comics', 'merchandises', 'listComics', 'listShop', 'listDc', 'listSites');

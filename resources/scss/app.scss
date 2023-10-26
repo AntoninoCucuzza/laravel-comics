@@ -55,3 +55,33 @@ main {
         }
     }
 }
+
+footer {
+    color: $dc_white;
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .top {
+        h3 {
+            text-transform: uppercase;
+        }
+
+        a {
+            color: $dc_dark_gray;
+            text-decoration: none;
+        }
+
+        .help {
+            padding: 2rem 0;
+        }
+
+        .bg_logo {
+            background-image: url('../img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .bot {}
+}

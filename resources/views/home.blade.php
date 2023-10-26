@@ -88,8 +88,68 @@
 @endsection
 
 @section('footer-content')
-<div class="">
+<div class="top">
+    <div class="container">
+        <div class="row  ">
+            <div class="col-2 help">
+                <h3>dc comics</h3>
+                <ul class="list-unstyled">
+                    @forelse ($listComics as $link)
+                    <li>
+                        <a href="#">{{$link['nav']}}</a>
+                    </li>
+                    @empty
+                    <p class="text-white">No link very sad</p>
+                    @endforelse
 
+                </ul>
+
+                <h3>shop</h3>
+                <ul class="list-unstyled">
+                    @forelse ($listShop as $link)
+                    <li>
+                        <a href="#">{{$link['nav']}}</a>
+                    </li>
+                    @empty
+                    <p class="text-white">No link very sad</p>
+                    @endforelse
+
+                </ul>
+            </div>
+
+            <div class="col-2 help">
+                <h3>DC</h3>
+                <ul class="list-unstyled">
+                    @forelse ($listDc as $link)
+                    <li>
+                        <a href="#">{{$link['nav']}}</a>
+                    </li>
+                    @empty
+                    <p class="text-white">No link very sad</p>
+                    @endforelse
+
+                </ul>
+            </div>
+
+            <div class="col-2 help ">
+                <h3>sites</h3>
+                <ul class="list-unstyled">
+                    @forelse ($listSites as $link)
+                    <li>
+                        <a href="#">{{$link['nav']}}</a>
+                    </li>
+                    @empty
+                    <p class="text-white">No link very sad</p>
+                    @endforelse
+
+                </ul>
+            </div>
+            <div class="col-6 bg_logo">
+            </div>
+        </div>
+
+    </div>
 </div>
 
+<div class="bot"></div>
 @endsection
