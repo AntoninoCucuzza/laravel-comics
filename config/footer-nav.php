@@ -107,6 +107,37 @@ return [
         [
             "nav" => 'DC Power Visa'
         ]
-    ]
+    ],
 
+    'socials' => [
+        [
+            "img" => 'resources/img/footer-facebook.png',
+            "name" => 'facebook',
+            "link" => 'https://www.facebook.com/?locale=it_IT',
+        ],
+
+        [
+            "img" => 'resources/img/footer-twitter.png',
+            "name" => 'twitter',
+            "link" => 'https://twitter.com/?lang=it',
+        ],
+
+        [
+            "img" => 'resources/img/footer-youtube.png',
+            "name" => 'youtube',
+            "link" => 'https://www.youtube.com',
+        ],
+
+        [
+            "img" => 'resources/img/footer-pinterest.png',
+            "name" => 'pinterest',
+            "link" => 'https://www.pinterest.it',
+        ],
+
+        [
+            "img" => 'resources/img/footer-periscope.png',
+            "name" => 'periscope',
+            "link" => 'https://www.pscp.tv',
+        ],
+    ]
 ];

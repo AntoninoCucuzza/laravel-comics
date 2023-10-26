@@ -24,6 +24,7 @@ Route::get('/', function () {
     $listDc = config('footer-nav.listDc');
     $listSites = config('footer-nav.listSites');
     //dd($listComics, $listShop, $listDc, $listSites);
+    $socials = config('footer-nav.socials');
 
-    return view('home', compact('comics', 'merchandises', 'listComics', 'listShop', 'listDc', 'listSites'));
-})->name('comics', 'merchandises', 'listComics', 'listShop', 'listDc', 'listSites');
+    return view('home', compact('comics', 'merchandises', 'listComics', 'listShop', 'listDc', 'listSites', 'socials'));
+})->name('comics', 'merchandises', 'listComics', 'listShop', 'listDc', 'listSites', 'socials');

@@ -151,5 +151,32 @@
     </div>
 </div>
 
-<div class="bot"></div>
+<div class="bot">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="left d-flex ">
+                    <a id="sign-in" href="#">
+                        Sign-up now!
+                    </a>
+                </div>
+                <div class="right d-flex">
+                    <a id="Follow-us" href="#">
+                        <h4 class="text-uppercase m-0">follow us</h4>
+                    </a>
+
+                    @forelse ($socials as $social)
+                    <a href="" class="ms-4" target="blank">
+                        <img class="socials" src="{{Vite::asset($social['img'])}}" alt="">
+                    </a>
+                    @empty
+                    <p class="text-white">No socials very sad</p>
+                    @endforelse
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

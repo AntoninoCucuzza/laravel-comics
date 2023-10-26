@@ -1,87 +1,17 @@
 @use './partials/variables' as *;
-@use './partials/jumbotron' as *;
 
+@use './partials/jumbotron' as *;
+@use './partials/main' as *;
+@use './partials/footer' as *;
 
 @import '~bootstrap/scss/bootstrap';
+
+a {
+    text-decoration: none;
+}
 
 header {
     .top {
         background-color: $dc_primary;
     }
-}
-
-main {
-    background-color: $dc_main_dark;
-
-    .comic {
-
-        .wrapper {
-            color: $dc_white;
-            margin: 1rem 0;
-
-            img {
-                height: 275px;
-                transition: all 0.2s;
-
-                &:hover {
-                    scale: 1.2;
-                }
-            }
-        }
-    }
-
-    .load_more {
-        background-color: $dc_primary;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: white;
-        background-color: $dc_primary;
-        border: 2px solid $dc_primary;
-        padding: 0.5rem 2rem;
-        text-decoration: none;
-
-    }
-
-    .merch {
-        background-color: $dc_primary;
-
-        img {
-            object-fit: scale-down;
-        }
-
-        a {
-            color: $dc_white;
-            text-decoration: none;
-        }
-    }
-}
-
-footer {
-    color: $dc_white;
-    background-image: url(../img/footer-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    .top {
-        h3 {
-            text-transform: uppercase;
-        }
-
-        a {
-            color: $dc_dark_gray;
-            text-decoration: none;
-        }
-
-        .help {
-            padding: 2rem 0;
-        }
-
-        .bg_logo {
-            background-image: url('../img/dc-logo-bg.png');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    }
-
-    .bot {}
 }
