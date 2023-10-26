@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>laravel-comics</title>
 
     <!-- Fonts -->
@@ -16,9 +15,19 @@
 </head>
 
 <body>
+
+    <header>
+        @yield('header-content')
+    </header>
+
     <main>
         @yield('main-content')
     </main>
+
+    <footer>
+        @yield('footer-content')
+    </footer>
+
 </body>
 
 </html>
