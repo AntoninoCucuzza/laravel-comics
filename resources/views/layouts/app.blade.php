@@ -27,6 +27,7 @@
 
     <main>
         @yield('main-content')
+        @yield('merchandise')
     </main>
 
     <footer>
