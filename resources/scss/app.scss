@@ -11,7 +11,25 @@ a {
 }
 
 header {
+    a {
+        color: $dc_dark_black;
+    }
+
     .top {
         background-color: $dc_primary;
+    }
+
+    .bot {
+
+        input {
+            border-radius: 0;
+            border: none;
+            border-bottom: 2px solid $dc_dark_black;
+        }
+
+        button {
+            border-radius: 0;
+            border-bottom: 2px solid $dc_dark_black !important;
+        }
     }
 }
